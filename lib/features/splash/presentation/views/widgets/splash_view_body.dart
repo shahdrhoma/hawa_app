@@ -10,8 +10,7 @@ class SplashViewBody extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.start, // Align text to the left
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               width: 42,
@@ -19,7 +18,16 @@ class SplashViewBody extends StatelessWidget {
               margin: EdgeInsets.only(top: 61, left: 18),
               child: Text(
                 'تخطي',
-                style: Styles.textStyle16, // Adjust font size as needed
+                style: Styles.textStyle16,
+              ),
+            ),
+            Container(
+              width: 361,
+              height: 201,
+              margin: const EdgeInsets.only(left: 16, top: 193),
+              child: Image.asset(
+                'assets/images/Frame 1.png',
+                fit: BoxFit.cover,
               ),
             ),
           ],
