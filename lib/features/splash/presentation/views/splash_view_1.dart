@@ -6,8 +6,16 @@ class SplashView1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SplashViewBody(),
+    return Scaffold(
+      body: SplashViewBody(
+        progress: 1 / 3,
+        nextRoute: '/secondSplashView',
+        model: SplashViewBodyModel(
+          photo: 'assets/images/Frame 1.png',
+          largeText: 'خدماتنا في متناول يدك',
+          smallText: 'احجز رحلتك بسهولة ,وصّل طلباتك بسرعة وأمان',
+        ),
+      ),
     );
   }
 }
