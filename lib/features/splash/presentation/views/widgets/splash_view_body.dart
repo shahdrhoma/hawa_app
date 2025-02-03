@@ -80,9 +80,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
               width: 42,
               height: 23,
               margin: const EdgeInsets.only(top: 61, left: 18),
-              child: Text(
+              child:const Text(
                 'تخطي',
-                style: const TextStyle(fontSize: 16, color: Colors.black),
+                style:  TextStyle(fontSize: 16, color: Colors.black),
               ),
             ),
             Container(
@@ -136,7 +136,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
                                 color: Colors.blue[200],
                                 child: Center(
                                   child: widget.progress < 1.0
-                                      ? Icon(Icons.arrow_forward,
+                                      ? const Icon(Icons.arrow_forward,
                                           size: 40, color: Colors.white)
                                       : Text(
                                           'ابدأ',

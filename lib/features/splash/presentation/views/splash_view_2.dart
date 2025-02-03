@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hawaa_app/core/utils/app_router.dart';
 import 'package:hawaa_app/features/splash/presentation/views/widgets/splash_view_body.dart';
 
 class SplashView2 extends StatelessWidget {
@@ -9,7 +10,7 @@ class SplashView2 extends StatelessWidget {
     return Scaffold(
       body: SplashViewBody(
         progress: 2 / 3,
-        nextRoute: '/thirdSplashView',
+        nextRoute: AppRouter.kThirdSplash,
         model: SplashViewBodyModel(
           photo: 'assets/images/At anytime.png',
           largeText: 'أمانك وسهولة الاستخدام أولويتنا',

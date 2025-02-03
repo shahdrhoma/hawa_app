@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class SplashViewBodyModel {
+class BodyModel {
   final String photo;
   final String largeText;
   final String smallText;
-  final IconData iconPath;
+  IconData? iconPath;
 
-  SplashViewBodyModel({
+  BodyModel({
     required this.photo,
     required this.largeText,
     required this.smallText,
-    required this.iconPath,
+    iconPath,
   });
 }
