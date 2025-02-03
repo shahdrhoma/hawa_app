@@ -6,6 +6,11 @@ abstract class Styles {
       fontWeight: FontWeight.w600,
       fontFamily: 'Cairo',
       color: Color(0xff414141));
+  static const textStyle16500 = TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      fontFamily: 'Cairo',
+      color: Color(0xffFFFFFF));
   static const textStyle24 = TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.w700,
@@ -21,4 +26,9 @@ abstract class Styles {
       fontWeight: FontWeight.w500,
       fontFamily: 'Cairo',
       color: Color(0xffFFFFFF));
+  static const textStyle20700 = TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'Cairo',
+      color: Color(0xff2A2A2A));
 }

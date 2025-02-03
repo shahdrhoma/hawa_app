@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:hawaa_app/features/home/presentation/views/location_permission_view.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_1.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_2.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_3.dart';
@@ -17,6 +18,10 @@ abstract class AppRouter {
     GoRoute(
       path: '/thirdSplashView',
       builder: (context, state) => const SplashView3(),
+    ),
+    GoRoute(
+      path: '/LocationPermissionView',
+      builder: (context, state) => LocationPermissionView(),
     ),
   ]);
 }
