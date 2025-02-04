@@ -1,22 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hawaa_app/core/utils/styles.dart';
 import 'package:go_router/go_router.dart';
-
-class SplashViewBodyModel {
-  final String photo;
-  final String largeText;
-  final String smallText;
-
-  SplashViewBodyModel({
-    required this.photo,
-    required this.largeText,
-    required this.smallText,
-  });
-}
+import 'package:hawaa_app/core/utils/app_router.dart';
+import 'package:hawaa_app/core/utils/styles.dart';
+import 'package:hawaa_app/shared/models/body_model.dart';
 
 class SplashViewBody extends StatefulWidget {
   final double progress;
-  final SplashViewBodyModel model;
+  final BodyModel model;
   final String nextRoute;
 
   const SplashViewBody({
@@ -80,9 +70,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
               width: 42,
               height: 23,
               margin: const EdgeInsets.only(top: 61, left: 18),
-              child:const Text(
-                'تخطي',
-                style:  TextStyle(fontSize: 16, color: Colors.black),
+              child: GestureDetector(
+                onTap: () => context.go(AppRouter.kLocationPermissionView), 
+                child:const Text(
+                  'تخطي',
+                  style:  TextStyle(fontSize: 16, color: Colors.black),
+                ),
               ),
             ),
             Container(
