@@ -1,6 +1,8 @@
 import 'package:go_router/go_router.dart';
+import 'package:hawaa_app/features/home/presentation/views/OTP_view.dart';
 import 'package:hawaa_app/features/home/presentation/views/customer_login_or_signup_view.dart';
 import 'package:hawaa_app/features/home/presentation/views/driver_or_customer_view.dart';
+import 'package:hawaa_app/features/home/presentation/views/sign_up_view.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_1.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_2.dart';
 import 'package:hawaa_app/features/splash/presentation/views/splash_view_3.dart';
@@ -10,6 +12,8 @@ abstract class AppRouter {
   static const kThirdSplash = '/thirdSplashView';
   static const kDriverOrCustomerView = '/driverOrCustomerView';
   static const kCustomerLoginOrSignupView = '/customerLoginOrSignupView';
+  static const kSignUpView = '/signUpView';
+  static const kOtpView = '/otpView';
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
@@ -30,6 +34,14 @@ abstract class AppRouter {
     GoRoute(
       path: kCustomerLoginOrSignupView,
       builder: (context, state) => const CustomerLoginOrSignupView(),
+      ),
+      GoRoute(
+      path: kSignUpView,
+      builder: (context, state) => const SignUpView(),
+      ),
+      GoRoute(
+      path: kOtpView,
+      builder: (context, state) => const OtpView(),
       ),
   ],
   );

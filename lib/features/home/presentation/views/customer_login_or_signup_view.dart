@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:hawaa_app/core/utils/app_router.dart';
 import 'package:hawaa_app/features/home/presentation/views/widgets/driver_or_customer_view_body.dart';
 
 import '../../../../core/utils/custom_button.dart';
-import '../../../../shared/models/splash_view_body_model.dart';
+import '../../../../shared/models/body_model.dart';
 
 class CustomerLoginOrSignupView extends StatelessWidget {
   const CustomerLoginOrSignupView({super.key});
@@ -20,10 +22,11 @@ class CustomerLoginOrSignupView extends StatelessWidget {
         children: [
           DriverOrCustomerViewBody(bodyModel: bodyModel), 
           const SizedBox(height: 78),  
-          CustomButton(
+          CustomButton( 
             text: 'إنشاء حساب',
             isActive: true,
             onPressed: () {
+              context.go(AppRouter.kSignUpView);
             },
           ),
           const SizedBox(height: 20),  

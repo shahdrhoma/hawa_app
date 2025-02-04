@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hawaa_app/core/utils/styles.dart';
-import '../../../../../shared/models/splash_view_body_model.dart';
+import '../../../../../shared/models/body_model.dart';
 
 class DriverOrCustomerViewBody extends StatelessWidget {
   const DriverOrCustomerViewBody({super.key, required this.bodyModel});
